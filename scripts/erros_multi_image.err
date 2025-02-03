@@ -1,0 +1,94 @@
+Traceback (most recent call last):
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/exception_handler.py", line 17, in __call__
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/cli/main.py", line 51, in main_subshell
+    from .conda_argparse import do_call, generate_parser, generate_pre_parser
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/cli/conda_argparse.py", line 50, in <module>
+    from .main_create import configure_parser as configure_parser_create
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/cli/main_create.py", line 11, in <module>
+    from ..notices import notices
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/notices/__init__.py", line 3, in <module>
+    from .core import notices  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/notices/core.py", line 14, in <module>
+    from . import cache, fetch, views
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/notices/cache.py", line 25, in <module>
+    from ..utils import ensure_dir_exists
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/utils.py", line 23, in <module>
+    from .gateways.disk.read import compute_sum
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/gateways/disk/read.py", line 31, in <module>
+    from ...exceptions import CondaUpgradeError, CondaVerificationError, PathNotFoundError
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/exceptions.py", line 16, in <module>
+    from requests.exceptions import JSONDecodeError
+ImportError: cannot import name 'JSONDecodeError' from 'requests.exceptions' (/scratch/app/python/3.9.1/lib/python3.9/site-packages/requests/exceptions.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/scratch/app_sequana/anaconda3/2024.02/bin/conda", line 13, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/cli/main.py", line 128, in main
+    return conda_exception_handler(main, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/exception_handler.py", line 388, in conda_exception_handler
+    return_value = exception_handler(func, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/exception_handler.py", line 20, in __call__
+    return self.handle_exception(exc_val, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/exception_handler.py", line 51, in handle_exception
+    from .exceptions import (
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/exceptions.py", line 16, in <module>
+    from requests.exceptions import JSONDecodeError
+ImportError: cannot import name 'JSONDecodeError' from 'requests.exceptions' (/scratch/app/python/3.9.1/lib/python3.9/site-packages/requests/exceptions.py)
+Traceback (most recent call last):
+  File "/scratch/astroparti/eduardo.rabelo/multi_image.py", line 6, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+Traceback (most recent call last):
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/exception_handler.py", line 17, in __call__
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/cli/main.py", line 51, in main_subshell
+    from .conda_argparse import do_call, generate_parser, generate_pre_parser
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/cli/conda_argparse.py", line 50, in <module>
+    from .main_create import configure_parser as configure_parser_create
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/cli/main_create.py", line 11, in <module>
+    from ..notices import notices
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/notices/__init__.py", line 3, in <module>
+    from .core import notices  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/notices/core.py", line 14, in <module>
+    from . import cache, fetch, views
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/notices/cache.py", line 25, in <module>
+    from ..utils import ensure_dir_exists
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/utils.py", line 23, in <module>
+    from .gateways.disk.read import compute_sum
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/gateways/disk/read.py", line 31, in <module>
+    from ...exceptions import CondaUpgradeError, CondaVerificationError, PathNotFoundError
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/exceptions.py", line 16, in <module>
+    from requests.exceptions import JSONDecodeError
+ImportError: cannot import name 'JSONDecodeError' from 'requests.exceptions' (/scratch/app/python/3.9.1/lib/python3.9/site-packages/requests/exceptions.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/scratch/app_sequana/anaconda3/2024.02/bin/conda", line 13, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/cli/main.py", line 128, in main
+    return conda_exception_handler(main, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/exception_handler.py", line 388, in conda_exception_handler
+    return_value = exception_handler(func, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/exception_handler.py", line 20, in __call__
+    return self.handle_exception(exc_val, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/exception_handler.py", line 51, in handle_exception
+    from .exceptions import (
+  File "/scratch/app_sequana/anaconda3/2024.02/lib/python3.11/site-packages/conda/exceptions.py", line 16, in <module>
+    from requests.exceptions import JSONDecodeError
+ImportError: cannot import name 'JSONDecodeError' from 'requests.exceptions' (/scratch/app/python/3.9.1/lib/python3.9/site-packages/requests/exceptions.py)

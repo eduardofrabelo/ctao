@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#SBATCH --nodes=1              # Número de nós
+#SBATCH --cpus-per-task=48     # Cpus dedicadas para cada task
+#SBATCH -p sequana_cpu             # Fila a ser utilizadas
+#SBATCH -J teste_multi_image        # Nome do job (padrão: igual ao nome deste arquivo)
+#SBATCH -o output_multi_image.out    # stdout (redirecionado com exec abaixo)
+#SBATCH -e erros_multi_image.err    # stderr (redirecionado com exec abaixo)
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=eduardofonsecar@usp.br
+#SBATCH --exclusive
+
+
+echo "..."
+#carregar modulos
+module load deepl/deeplearn-py3.7
+
+cd /scratch/astroparti/eduardo.rabelo/script
+
+#exemplo em python...
+python multi_image.py
+
+echo "saindo!"
